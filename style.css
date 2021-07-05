@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Nunito;
+}
+.container{
+    max-width: 700px;
+    margin: auto;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(to right, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    text-align: center;
+}
+h2{
+    margin-bottom: 30px;
+    text-decoration: underline;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+}
+.dial{
+    margin: auto;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    border: 9px double black;
+    border-radius: 50%;
+    position: relative;
+}
+.seconds_hand,.minutes_hand,.hours_hand{
+    text-align: center;
+    transform-origin: 99%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: rotate(90deg);
+    border-radius: 10px;
+}
+.seconds_hand{
+    border: 2px solid #333;
+    width: 49%;
+    background: rgb(170, 166, 166);
+}
+.minutes_hand{
+    height: 5px;
+    width: 47%;
+    background: rgb(170, 166, 166);
+    border : 3px solid rgb(228, 222, 222);
+} 
+.hours_hand{
+    width:42%;
+    border: 2.5px solid rgb(241, 36, 36);
+}
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+}
+
+
+@media screen and (max-width:400px) {
+    .dial{
+        width: 250px;
+        height: 250px;
+    }
+}
