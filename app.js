@@ -16,8 +16,8 @@ function setDate(){
     InMinutes.style.transform=`rotate(${minutesDeg}deg)`;
 
     const hours=present.getHours()
-    let hoursDeg=((hours/60)*360)+90;
-    InHours.style.transform=`rotate(${hours}deg)`;
+    let hoursDeg=((hours/12)*360)+90;
+    InHours.style.transform=`rotate(${hoursDeg}deg)`;
 }
 
 // this calls the function severy second

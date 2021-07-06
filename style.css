@@ -17,7 +17,6 @@ body{
     align-items: center;
     background: -webkit-linear-gradient(to right, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     text-align: center;
 }
 h2{
@@ -39,12 +38,12 @@ h2{
 }
 .seconds_hand,.minutes_hand,.hours_hand{
     text-align: center;
-    transform-origin: 99%;
+    transform-origin: 100%;
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: rotate(90deg);
     border-radius: 10px;
+    transform: rotate(90deg);
 }
 .seconds_hand{
     border: 2px solid #333;
